@@ -16,30 +16,24 @@
     <script src="/index.87ac3aff.js" defer=""></script>
   </head>
   <body style="margin: 0; overflow: hidden">
-    <a-scene embedded="" arjs="detectionMode: mono_and_matrix; matrixCodeType: 3x3;" renderer="logarithmicDepthBuffer: true" stats="">
+    <a-scene embedded="" arjs="detectionMode: mono_and_matrix; matrixCodeType: 3x3;" renderer="logarithmicDepthBuffer: true" device-orientation-permission-ui="enabled: false">
       <a-assets>
-        <a-asset-item id="cube" src="/cube-animated_V01.glb"></a-asset-item>
-        <a-asset-item id="base-env" src="/24-06-26_base-environment_V02.glb"></a-asset-item>
-        <a-asset-item id="dynamic-env" src="/24-06-26_dynamic-environment_V01.glb"></a-asset-item>
-        <a-asset-item id="maxx" src="24-06-26_maxx-working_V01.glb"></a-asset-item>
-        <a-asset-item id="anna" src="24-06-26_anna-working_V01.glb"></a-asset-item>
+        <a-asset-item id="cube" src="/24-07-11_cube.glb"></a-asset-item>
+        <a-asset-item id="base-env" src="/24-07-11_base-environment.glb"></a-asset-item>
+        <a-asset-item id="dynamic-env" src="/24-07-11_dynamic-environment.glb"></a-asset-item>
+        <a-asset-item id="maxx" src="/24-07-11_maxx.glb"></a-asset-item>
+        <a-asset-item id="anna" src="/24-07-11_anna.glb"></a-asset-item>
+        <a-asset-item id="logo" src="/24-07-11_logo.glb"></a-asset-item>
       </a-assets>
-      <a-marker id="barcode-1" type="barcode" value="1" marker-angle-sensor="axis:y" marker-states="states: { &quot;one&quot;: {&quot;Min&quot;: 0, &quot;Max&quot;: 30}, &quot;two&quot;: {&quot;Min&quot;: 30, &quot;Max&quot;: 60}, &quot;three&quot;: { &quot;Min&quot;: 60, &quot;Max&quot;: 90} }">
+      <a-marker id="barcode-1" type="barcode" value="1" marker-angle-sensor="axis:y" marker-states="states: { &quot;one&quot;: {&quot;Min&quot;: 0, &quot;Max&quot;: 60}, &quot;two&quot;: {&quot;Min&quot;: 60, &quot;Max&quot;: 100} }">
         <a-box scale="0.01 0.01 0.01" color="red"></a-box>
       </a-marker>
-      <!--
-      <a-entity 
-        scale="1 1 1" 
-        position="0 2 0" 
-        rotation="0 0 0" 
-        gltf-model="#cube" 
-        animation-mixer
-        cyber-funk-state-marker='markerId: barcode-1; activeStates: one, two'
-        marker-state-animator='markerId: barcode-1; stateToAnimationMapping: { "one": "UpDown", "two": "SideToSide" }'></a-entity> -->
-      <a-entity scale="0.28 0.28 0.28" position="0 -0.3 0" rotation="0 -90 0" gltf-model="#base-env" animation-mixer="" cyber-funk-state-marker="markerId: barcode-1; activeStates: one, two, three" marker-state-animator="markerId: barcode-1; stateToAnimationMapping: { &quot;one&quot;: &quot;ArmatureAction&quot;, &quot;two&quot;: &quot;ArmatureAction&quot;, &quot;three&quot;: &quot;ArmatureAction&quot; }"></a-entity>
-      <a-entity scale="0.28 0.28 0.28" position="0 -0.3 0" rotation="0 -90 0" gltf-model="#dynamic-env" cyber-funk-state-marker="markerId: barcode-1; activeStates: one, two, three"></a-entity>
-      <a-entity scale="0.285 0.285 0.285" position="0 -0.3 0" rotation="0 -90 0" gltf-model="#maxx" animation-mixer="" cyber-funk-state-marker="markerId: barcode-1; activeStates: one, two, three" marker-state-animator="markerId: barcode-1; stateToAnimationMapping: { &quot;one&quot;: &quot;maxx-cards&quot;, &quot;two&quot;: &quot;maxx-cards&quot;, &quot;three&quot;: &quot;maxx-cards&quot; }"></a-entity>
-      <a-entity scale="0.285 0.285 0.285" position="0 -0.3 0" rotation="0 -90 0" gltf-model="#anna" animation-mixer="" cyber-funk-state-marker="markerId: barcode-1; activeStates: one, two, three" marker-state-animator="markerId: barcode-1; stateToAnimationMapping: { &quot;one&quot;: &quot;anna-working&quot;, &quot;two&quot;: &quot;anna-working&quot;, &quot;three&quot;: &quot;anna-working&quot; }"></a-entity>
+      <a-entity scale="0.31 0.31 0.31" position="0 -0.3 0" rotation="0 180 0" gltf-model="#base-env" animation-mixer="" cyber-funk-state-marker="markerId: barcode-1; activeStates: one, two" marker-state-animator="markerId: barcode-1; stateToAnimationMapping: { &quot;one&quot;: &quot;ArmatureAction&quot;, &quot;two&quot;: &quot;ArmatureAction&quot; }"></a-entity>
+      <a-entity scale="0.31 0.31 0.31" position="0 -0.3 0" rotation="0 180 0" gltf-model="#dynamic-env" cyber-funk-state-marker="markerId: barcode-1; activeStates: one, two"></a-entity>
+        <a-entity scale="0.31 0.31 0.31" position="0 -0.3 0" rotation="0 180 0" gltf-model="#logo" cyber-funk-state-marker="markerId: barcode-1; activeStates: one, two" animation-mixer=""></a-entity>
+      <a-entity scale="0.31 0.31 0.31" position="0 -0.3 0" rotation="0 180 0" gltf-model="#maxx" animation-mixer="" cyber-funk-state-marker="markerId: barcode-1; activeStates: one, two" marker-state-animator="markerId: barcode-1; stateToAnimationMapping: { &quot;one&quot;: &quot;maxx-working&quot;, &quot;two&quot;: &quot;maxx-greeting&quot; }"></a-entity>
+      <a-entity scale="0.31 0.31 0.31" position="0 -0.3 0" rotation="0 180 0" gltf-model="#anna" animation-mixer="" cyber-funk-state-marker="markerId: barcode-1; activeStates: one, two" marker-state-animator="markerId: barcode-1; stateToAnimationMapping: { &quot;one&quot;: &quot;anna-working&quot;, &quot;two&quot;: &quot;anna-yelling&quot; }"></a-entity>
+      <a-entity scale="0.31 0.31 0.31" position="0 -0.3 0" rotation="0 180 0" gltf-model="#cube" animation-mixer="" cyber-funk-state-marker="markerId: barcode-1; activeStates: one, two" marker-state-animator="markerId: barcode-1; stateToAnimationMapping: { &quot;one&quot;: &quot;cubeAction&quot;, &quot;two&quot;: &quot;cubeStill&quot; }"></a-entity>
       <a-entity camera=""></a-entity>
     </a-scene>
   </body>
