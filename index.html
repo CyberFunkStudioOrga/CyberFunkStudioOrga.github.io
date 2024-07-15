@@ -26,9 +26,10 @@
       <a-marker id="barcode-1" type="barcode" value="1" marker-angle-sensor="axis:y" marker-states="states: { &quot;one&quot;: {&quot;Min&quot;: 0, &quot;Max&quot;: 45}, &quot;two&quot;: {&quot;Min&quot;: 45, &quot;Max&quot;: 100} }">
         <a-box scale="0.01 0.01 0.01" color="white"></a-box>
       </a-marker>
-      <a-entity scale="0.31 0.31 0.31" position="0 -0.3 0" rotation="0 180 0" gltf-model="#base-env" animation-mixer="" cyber-funk-state-marker="markerId: barcode-1; activeStates: one, two"></a-entity>
-      <a-entity scale="0.31 0.31 0.31" position="0 -0.3 0" rotation="0 180 0" gltf-model="#logo" cyber-funk-state-marker="markerId: barcode-1; activeStates: one, two" animation-mixer=""></a-entity>
-      <a-entity scale="0.31 0.31 0.31" position="0 -0.3 0" rotation="0 180 0" gltf-model="#maxx" animation-mixer="" cyber-funk-state-marker="markerId: barcode-1; activeStates: one, two" marker-state-animator="markerId: barcode-1; stateToAnimationMapping: { &quot;one&quot;: &quot;maxx-working&quot;, &quot;two&quot;: &quot;maxx-greeting&quot; }"></a-entity>
+      <a-entity scale="0.3 0.3 0.3" position="0 -0.3 0" rotation="0 180 0" gltf-model="#base-env" animation-mixer="" cyber-funk-state-marker="markerId: barcode-1; activeStates: one, two"></a-entity>
+      <a-entity scale="0.29 0.29 0.29" position="0 -0.3 0" rotation="0 180 0" gltf-model="#logo" cyber-funk-state-marker="markerId: barcode-1; activeStates: one, two" animation-mixer=""></a-entity>
+      <a-entity scale="0.31 0.31 0.31" position="0 -0.3 0" rotation="0 180 0" gltf-model="#maxx" animation-mixer="" cyber-funk-state-marker="markerId: barcode-1; activeStates: one, two"></a-entity>
+        <!--marker-state-animator='markerId: barcode-1; stateToAnimationMapping: { "one": "maxx-working", "two": "maxx-greeting" }'></a-entity>-->
       <a-entity scale="0.31 0.31 0.31" position="0 -0.3 0" rotation="0 180 0" gltf-model="#anna" animation-mixer="" cyber-funk-state-marker="markerId: barcode-1; activeStates: one, two"></a-entity>
       <a-entity camera=""></a-entity>
     </a-scene>
