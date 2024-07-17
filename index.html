@@ -22,15 +22,19 @@
         <a-asset-item id="maxx" src="/24-07-15_maxx.glb"></a-asset-item>
         <a-asset-item id="anna" src="/24-07-15_anna.glb"></a-asset-item>
         <a-asset-item id="logo" src="/24-07-15_logo.glb"></a-asset-item>
+        <a-asset-item id="hearts" src="/24-07-17_hearts.glb"></a-asset-item>
+        <a-asset-item id="opened" src="/24-07-17_opened.glb"></a-asset-item>
       </a-assets>
       <a-marker id="barcode-1" type="barcode" value="1" marker-angle-sensor="axis:y" marker-states="states: { &quot;one&quot;: {&quot;Min&quot;: 0, &quot;Max&quot;: 45}, &quot;two&quot;: {&quot;Min&quot;: 45, &quot;Max&quot;: 100} }">
         <a-box scale="0.01 0.01 0.01" color="white"></a-box>
       </a-marker>
-      <a-entity scale="0.3 0.3 0.3" position="0 -0.3 0" rotation="0 180 0" gltf-model="#base-env" animation-mixer="" cyber-funk-state-marker="markerId: barcode-1; activeStates: one, two"></a-entity>
+      <a-entity scale="0.3 0.3 0.3" position="0 -0.3 0" rotation="0 180 0" gltf-model="#base-env" cyber-funk-state-marker="markerId: barcode-1; activeStates: one, two" animation-mixer=""></a-entity>
       <a-entity scale="0.29 0.29 0.29" position="0 -0.3 0" rotation="0 180 0" gltf-model="#logo" cyber-funk-state-marker="markerId: barcode-1; activeStates: one, two" animation-mixer=""></a-entity>
-      <a-entity scale="0.31 0.31 0.31" position="0 -0.3 0" rotation="0 180 0" gltf-model="#maxx" animation-mixer="" cyber-funk-state-marker="markerId: barcode-1; activeStates: one, two"></a-entity>
+      <a-entity scale="0.31 0.31 0.31" position="0 -0.3 0" rotation="0 180 0" gltf-model="#maxx" cyber-funk-state-marker="markerId: barcode-1; activeStates: one, two" animation-mixer=""></a-entity>
         <!--marker-state-animator='markerId: barcode-1; stateToAnimationMapping: { "one": "maxx-working", "two": "maxx-greeting" }'></a-entity>-->
-      <a-entity scale="0.31 0.31 0.31" position="0 -0.3 0" rotation="0 180 0" gltf-model="#anna" animation-mixer="" cyber-funk-state-marker="markerId: barcode-1; activeStates: one, two"></a-entity>
+      <a-entity scale="0.31 0.31 0.31" position="0 -0.3 0" rotation="0 180 0" gltf-model="#anna" cyber-funk-state-marker="markerId: barcode-1; activeStates: one, two" animation-mixer=""></a-entity>
+      <a-entity scale="0.31 0.31 0.31" position="0 -0.3 0" rotation="0 180 0" gltf-model="#hearts" cyber-funk-state-marker="markerId: barcode-1; activeStates: two" animation-mixer=""></a-entity>
+      <a-entity scale="0.31 0.31 0.31" position="0 -0.3 0" rotation="0 180 0" gltf-model="#opened" cyber-funk-state-marker="markerId: barcode-1; activeStates: two" animation-mixer=""></a-entity>
       <a-entity camera=""></a-entity>
     </a-scene>
   </body>
